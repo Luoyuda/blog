@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  form(action="/api/v1/login", method="post")
+    input(type="text", name="email")
+    input(type="password", name='password')
+    input(type="submit", value="提交")
